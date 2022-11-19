@@ -1,6 +1,6 @@
 name: mConnect Simple & Hash Cache Module
 
-on: [push, pull_request]
+on: [ push, pull_request ]
 
 jobs:
   test:
@@ -8,8 +8,8 @@ jobs:
 
     strategy:
       matrix:
-        deno: [1.27.2, 1.28.0, 1.28.1]
-    name: Test with Deno ${{ matrix.deno }} 
+        deno: [ 1.27.2, 1.28.0, 1.28.1 ]
+    name: Test with Deno ${{ matrix.deno }}
 
     steps:
       - uses: actions/checkout@master
@@ -21,6 +21,9 @@ jobs:
 
       - name: Print deno version
         run: deno --version
+
+      - name: Format code using Deno format
+        run: deno fmt **/*.ts
 
       - name: Check format
         run: deno fmt --check **/*.ts
