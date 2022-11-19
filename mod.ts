@@ -1,7 +1,7 @@
 // Copyright 2022 mConnect.biz. All rights reserved. MIT license.
 
 /**
- * A test module testing Deno modules and applications.
+ * A test module for testing Deno modules and applications.
  *
  * ### Example Usage:
  *
@@ -14,7 +14,7 @@
  *
  * To test the module run:
  * ```sh
- * deno run test/testCases.ts
+ * deno run test.ts
  * ```
  *
  * @module
