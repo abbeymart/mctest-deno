@@ -1,5 +1,10 @@
 # Historical logs
 
+## Version 0.1.2
+
+- Release date: Nov 19, 2022
+- corrected-module-github-name-v0.1.2
+
 ## Version 0.1.1
 
 - Release date: Nov 19, 2022

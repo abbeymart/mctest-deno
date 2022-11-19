@@ -1,4 +1,4 @@
-# mctest | github.com/abbeymart/@mconnect/mctest-deno
+# mctest | github.com/abbeymart/mctest-deno
 
 - Simple Asynchronous Test Module
 - See test folder for test cases / scenarios and usage
