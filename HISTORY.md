@@ -1,5 +1,10 @@
 # Historical logs
 
+## Version 0.1.3
+
+- Release date: Nov 19, 2022
+- activated-for-deno-library-v0.1.3
+
 ## Version 0.1.2
 
 - Release date: Nov 19, 2022
