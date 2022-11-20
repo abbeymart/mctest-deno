@@ -1,4 +1,4 @@
-name: mConnect Simple & Hash Cache Module
+name: mConnect Simple Asynchronous Testing Module
 
 on: [ push, pull_request ]
 

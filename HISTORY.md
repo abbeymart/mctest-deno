@@ -1,5 +1,10 @@
 # Historical logs
 
+## Version 0.1.4
+
+- Release date: Nov 19, 2022
+- Updated-module-version-ref-v0.1.4
+
 ## Version 0.1.3
 
 - Release date: Nov 19, 2022

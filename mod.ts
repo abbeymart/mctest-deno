@@ -8,7 +8,7 @@
  * Test case composition - see the test folder
  *
  * ```ts
- * import { assertEquals, assertNotEquals, postTestResult } from "https://deno.land/x/mctest/mod.ts";
+ * import { assertEquals, assertNotEquals, postTestResult } from "https://deno.land/x/mctest@v0.1.4/mod.ts";
  *
  * ```
  *
