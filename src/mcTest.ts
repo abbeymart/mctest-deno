@@ -8,14 +8,18 @@ export interface OptionValue {
 }
 
 export type ValueType =
-  | Record<string, unknown>
-  | Array<Record<string, unknown>>
-  | string
-  | number
-  | Array<string>
-  | Array<number>
-  | boolean
-  | Array<boolean>;
+    | Record<string, unknown>
+    | Array<Record<string, unknown>>
+    | string
+    | number
+    | Array<string>
+    | Array<number>
+    | Date
+    | Array<Date>
+    | boolean
+    | Array<boolean>
+    | { [key: string]: ValueType }
+    | unknown;
 
 export interface ObjectType {
   [key: string]: ValueType;
@@ -151,6 +155,9 @@ export function assertNotStrictEquals(
 // Access params: test-name, test-functions, test-options
 export async function mcTest(options: OptionValue): Promise<void> {
   try {
+    // Reset unit test counts, prior to executing test-cases group (testFunction)
+    unitTestPassed = 0;
+    unitTestFailed = 0;
     const testName = options && options.name ? options?.name : "Unknown";
     const testFunction = options && options.testFunc ? options?.testFunc : null;
     console.log(`Running Test: ${testName}`);
@@ -173,9 +180,6 @@ export async function mcTest(options: OptionValue): Promise<void> {
     console.log("Test Passed: ", unitTestPassed);
     console.error("Test Failed: ", unitTestFailed);
     console.log("Total Test: ", unitTestPassed + unitTestFailed);
-    // Reset unit test counts
-    unitTestPassed = 0;
-    unitTestFailed = 0;
   }
 }
 

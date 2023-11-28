@@ -1,5 +1,10 @@
 # Historical logs
 
+## Version 0.2.0
+
+- Release date: Nov 28, 2023
+- Align-ValueType-across-packages-adjust-unitTestCount-reset-v0.2.0
+
 ## Version 0.1.4
 
 - Release date: Nov 19, 2022
